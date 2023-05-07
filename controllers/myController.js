@@ -62,7 +62,6 @@ const post = async (req, res) => {
     //store in postman
     res.json(val)
     //get the date at which data was posted
-   console.log (val.createdAt.toDateString())
      } catch (err) {
           es.status(404).json({
         status : 'fail',
