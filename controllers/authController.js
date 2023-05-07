@@ -66,7 +66,6 @@ const login = async (req, res) => {
     
     const token = user.createJWT()
 
-  console.log(req.user)
     res.status(StatusCodes.OK).json({ user, token, location: user.location });
 }
 
